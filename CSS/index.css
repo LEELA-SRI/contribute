@@ -1,0 +1,689 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap');
+:root
+{
+    --main-color:rgb(22, 22, 63);
+    --white-color:#fff;
+    --light-blue:rgb(249,250,250);
+    --button-color:blue;
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    scroll-behavior: smooth;
+}
+.container
+{
+    padding: 0 10%;
+}
+
+.hero__section
+{
+    min-height: 100vh;
+    width: 100%;
+    background: var(--main-color);
+}
+
+.hero__section button
+{
+    background:var(--button-color);
+}
+
+.hero__section h1
+{
+    color: var(--white-color);
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero__section h5
+{
+    color: var(--white-color);
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero__section .para
+{
+    color: var(--white-color);
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
+.hero__section h3
+{
+    font-size: 2rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.1rem;
+}
+.image{
+    width: 60%;
+    height: auto;
+}
+
+.cards
+{
+    padding: 1.5rem 0 1.5rem 0;
+    background: var(--light-blue);
+    margin-bottom: 6rem;
+}
+
+.cards h5
+{
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cards p
+{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.community-section h2
+{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.underline{
+    background-color: rgb(255,207,0);
+    width: 4rem;
+    height: 0.2rem;
+    margin-bottom: 2rem;
+}
+
+.community-section .para
+{
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    font-family: 'Merriweather', serif;
+    padding: 0 5rem;
+    text-align: center;
+    
+}
+
+.community-section p
+{
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    font-family: 'Merriweather', serif; 
+    text-align: center; 
+}
+.community-section .card-details
+{
+    margin-bottom: 2rem;
+}
+.community-section h5
+{
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Underline1{
+    height : 0.3rem;
+    border-top: 0.2vw solid black;
+    border-bottom: 0.2vw solid black;
+    margin-bottom: 2rem;
+}
+.become-section
+{
+
+    margin-top: 2rem;
+}
+
+.col-8
+{
+    margin-left: -3rem;
+}
+
+
+.become-section h3
+{
+    margin-top: 1rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.become-section p
+{
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    font-family: 'Merriweather', serif; 
+    padding-right: 4rem;
+}
+
+.images-box
+{
+    position: relative;
+}
+
+
+.images-box .img-2
+{
+    position: absolute;
+    width: 70%;
+    height: 85%;
+    right: 10%;
+    bottom: -60%;
+}
+
+.images-box .img-4
+{
+    position: absolute;
+    width: 70%;
+    height: 85%;
+    right: 10%;
+    bottom: -60%;
+}
+
+.Underline3{
+    height : 0.3rem;
+    border-top: 0.2vw solid black;
+    border-bottom: 0.2vw solid black;
+    margin-bottom: 5rem;
+    display: grid;
+    place-items: end;
+}
+
+.next-container
+{
+    margin-top: 6rem;
+}
+
+.footer
+{
+    background: var(--light-blue);
+    padding: 4rem;
+}
+
+.footer h3 a
+{
+    color: black;
+    text-decoration: none;
+   font-family: Arial, Helvetica, sans-serif;;
+
+}
+
+
+@media (max-width:1200px)
+{
+    .container
+    {
+    padding: 0 3%;
+    }
+
+    .hero__section
+    {
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    .hero__section h3
+    {
+        font-size: 2rem;
+        margin-top: 1rem !important;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+    .image{
+        width: 75%;
+        height: auto;
+    }
+    .col-8
+    {
+        margin-left: -1rem;
+    }
+
+
+    .images-box
+{
+    position: relative;
+}
+
+
+.images-box .img-2
+{
+    position: absolute;
+    width: 70%;
+    height: 85%;
+    right: 10%;
+    bottom: -60%;
+}
+
+.images-box .img-4
+{
+    position: absolute;
+    width: 70%;
+    height: 85%;
+    right: 10%;
+    bottom: -60%;
+}
+    
+.Underline3{
+    height : 0.3rem;
+    border-top: 0.2vw solid black;
+    border-bottom: 0.2vw solid black;
+    margin-bottom: 5rem;
+    display: grid;
+    place-items: end;
+    margin-top: 10rem;
+}
+
+    .next-container .main-row
+    {
+        margin-top: 5rem !important;
+    }
+
+    .next-container .col-md-6
+    {
+        margin-top: -10rem;
+    }
+
+}
+
+@media (max-width:992px)
+{
+    .container
+    {
+    padding: 0 3%;
+    }
+
+    .hero__section
+    {
+        min-height: 80vh;
+        width: 100%;
+    }
+    .hero__section h1
+    {
+        font-size: 2rem;
+    }
+    .hero__section h3
+    {
+        font-size: 2rem;
+        margin-top: 1rem !important;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .image{
+        width: 75%;
+        height: auto;
+    }
+    .col-8
+    {
+        margin-left: -1rem;
+    }
+
+    .community-section .para
+    {
+    font-size: 1rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    padding: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    }
+    .become-section p
+    {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    font-family: 'Merriweather', serif; 
+    padding: 0;
+    }
+
+    .images-box .img-1
+    {
+       
+        width: 100%;
+        height: 100%;
+        margin-bottom: 2rem;
+       
+    }
+
+    .images-box .img-2
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        right: 0;
+        bottom: -100%;
+    }
+
+    .images-box .img-3
+    {
+       
+        width: 100%;
+        height: 100%;
+        margin-bottom: 2rem;
+        margin-top: 6rem;
+       
+    }
+
+    .images-box .img-4
+    {
+        position: absolute;
+        width: 100%;
+        height: 60%;
+        right: 0;
+        
+  
+    }
+    .Underline3{
+        margin-top: 10rem;
+        height : 0.3rem;
+        border-top: 0.2vw solid black;
+        border-bottom: 0.2vw solid black;
+    }
+
+    .next-container .main-row
+    {
+        margin-top: -5rem !important;
+    }
+
+    .next-container .col-md-6
+    {
+        margin-top: -4rem;
+    }
+
+}
+
+
+@media (max-width:820px)
+{
+    .hero__section
+    {
+        min-height: 50vh;
+        width: 100%;
+    }
+    .hero__section h3
+    {
+        font-size: 2rem;
+        margin-top: 1rem !important;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .next-container .main-row
+    {
+        margin-top: -11rem !important;
+    }
+
+    .next-container .col-md-6
+    {
+        margin-top: -4rem;
+    }
+}
+
+@media (max-width:768px)
+{
+    .container
+    {
+    padding: 0 3%;
+    }
+
+    .hero__section
+    {
+        min-height: 50vh;
+        width: 100%;
+    }
+    .hero__section h1
+    {
+        font-size: 2rem;
+    }
+    .hero__section h3
+    {
+        font-size: 2rem;
+        margin-top: 1rem !important;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .image{
+        width: 75%;
+        height: auto;
+    }
+    .col-8
+    {
+        margin-left: -1rem;
+    }
+
+    .community-section .para
+    {
+    font-size: 1rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    padding: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    }
+    .become-section p
+    {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    font-family: 'Merriweather', serif; 
+    padding: 0;
+    }
+
+    .images-box .img-1
+    {
+       
+        width: 100%;
+        height: 100%;
+        margin-bottom: 2rem;
+       
+    }
+
+    .images-box .img-2
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        right: 0;
+        bottom: -100%;
+    }
+
+    .images-box .img-3
+    {
+       
+        width: 100%;
+        height: 100%;
+        margin-bottom: 2rem;
+        margin-top: 6rem;
+       
+    }
+
+    .images-box .img-4
+    {
+        position: absolute;
+        width: 100%;
+        height: 60%;
+        right: 0;
+        
+  
+    }
+    .Underline3{
+        margin-top: 10rem;
+        height : 0.3rem;
+        border-top: 0.2vw solid black;
+        border-bottom: 0.2vw solid black;
+    }
+
+    .next-container .main-row
+    {
+        margin-top: -10rem !important;
+    }
+
+    .next-container .col-md-6
+    {
+        margin-top: -4rem;
+    }
+
+}
+
+
+@media (max-width:576px)
+{
+    .container
+    {
+    padding: 0 10%;
+    }
+    .next-container
+    {
+    padding: 0 7%;
+    }
+    .hero__section h1
+    {
+        font-size: 2rem;
+        margin-top: 1.5rem;
+    }
+    .hero__section h3
+    {
+        font-size: 1.6rem;
+        margin-top: 1rem !important;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .hero__section h5
+    {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    .hero__section .para
+    {
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+        margin-top: -2rem;
+    }
+    .image{
+        width: 65%;
+        height: auto;
+    }
+    .cards
+    {
+        margin-bottom: 1rem;
+    }
+    .cards h5
+    {
+        font-size: 1.2rem;
+    }
+    .cards p
+    {
+        font-size: 1rem;
+       
+    }
+    
+    .col-8
+    {
+        margin-left: -2rem;
+    }
+
+    .main-row
+    {
+        margin:1rem 0 0 1rem;
+    }
+
+    .community-section .para
+    {
+    font-size: 1rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    padding: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    }
+    .become-section h3
+    {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .become-section p
+    {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    font-family: 'Merriweather', serif; 
+    padding: 0;
+    }
+    .images-box .img-1
+    {
+       
+        width: 100%;
+        height: 100%;
+        margin-bottom: 2rem;
+       
+    }
+
+    .images-box .img-2
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+     
+    
+    }
+
+    .images-box .img-3
+    {
+       
+        width: 100%;
+        height: 100%;
+        margin-bottom: 2rem;
+        margin-top: 16rem;
+        
+       
+    }
+
+    .images-box .img-4
+    {
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        top: 31rem;
+      
+        
+  
+    }
+    .Underline3{
+        margin-top: 23rem;
+        height : 0.3rem;
+        border-top: 0.2vw solid black;
+        border-bottom: 0.2vw solid black;
+    }
+
+   
+
+}
+
+
