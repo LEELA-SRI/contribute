@@ -13,12 +13,36 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+.items{
+    width:100%;
+   
+    /* margin-top: 100px; */
+  }
+  .slick-slide{
+    margin:15px;
+  }
+  .slick-slide img{
+    width:100%;
+    border: 0px solid #fff;
+  }
+  .slick-prev{
+      left:-17px
+  }
+  .slick-next{
+      right:-17px
+  }
+  .slick-prev,.slick-next{
+      color:black !important
+  }
+  .slick-prev:before,.slick-next:before{
+      color:black !important
+  }
 body
 {
     scroll-behavior: smooth;
     font-size: 14px;
 }
+
 .container
 {
     padding: 0 10%;
@@ -99,7 +123,7 @@ background-image: linear-gradient(315deg, #b1bfd8 0%, #6782b4 74%);
     font-weight: 600;
 }
 
-.community-section h2
+.community-section h2,.carousel-sec h2
 {
     font-size: 2rem;
     font-weight: bold;
@@ -113,7 +137,7 @@ background-image: linear-gradient(315deg, #b1bfd8 0%, #6782b4 74%);
     margin-bottom: 2rem;
 }
 
-.community-section .para
+.community-section .para,.carousel-sec .para
 {
     font-size: 1rem;
     line-height: 2rem;
@@ -125,7 +149,7 @@ background-image: linear-gradient(315deg, #b1bfd8 0%, #6782b4 74%);
     
 }
 
-.community-section p
+.community-section p,.carousel-sec p
 {
     font-size: 0.9rem;
     line-height: 1.5rem;
@@ -152,10 +176,33 @@ background-image: linear-gradient(315deg, #b1bfd8 0%, #6782b4 74%);
     border-bottom: 0.2vw solid black;
     margin-bottom: 2rem;
 }
+.carousel-sec{
+    padding-top: 5rem;
+    padding-bottom: 2rem;background: #f9fafa;
+}
+.carousel-container{
+    margin-top: 5rem;
+}
+.g-name{
+    font-size:1.4rem;
+    font-weight:600
+}
+.g-role{
+    width:fit-content;
+    color:#626468
+}
+.g-company{
+    width:fit-content!important;
+    height:50%
+}
 .become-section
 {
 
-    margin-top: 2rem;
+    
+    padding-top:3rem;
+    /* padding-bottom: 5rem; */
+    
+  
 }
 
 .col-8
@@ -189,7 +236,7 @@ background-image: linear-gradient(315deg, #b1bfd8 0%, #6782b4 74%);
 
 .images-box .img-2
 {
-    position: absolute;
+    
     width: 70%;
     height: 85%;
     right: 10%;
@@ -214,9 +261,10 @@ background-image: linear-gradient(315deg, #b1bfd8 0%, #6782b4 74%);
     place-items: end;
 }
 
-.next-container
+.become-frag
 {
-    margin-top: 6rem;
+    background: #f9fafa;
+    
 }
 
 .footer
@@ -243,6 +291,11 @@ background-image: linear-gradient(315deg, #b1bfd8 0%, #6782b4 74%);
     right: 0px;
     top: -45%;
     z-index: -1; */
+    
+}
+.contact_us{
+  min-height: 50vh !important;
+    background:#101d42 !important;
     
 }
 
@@ -392,7 +445,7 @@ background-image: linear-gradient(315deg, #b1bfd8 0%, #6782b4 74%);
     
     .images-box .img-2
     {
-        position: absolute;
+        
         width: 100%;
         height: 100%;
         right: 0;
@@ -486,6 +539,12 @@ background-image: linear-gradient(315deg, #b1bfd8 0%, #6782b4 74%);
         color: white;
         font-family: Arial, Helvetica, sans-serif;
     }
+    .contact_us{
+        padding-top:3rem;
+        padding-bottom: 3rem;
+       
+        
+    }
     
     .image{
         width: 75%;
@@ -528,7 +587,7 @@ background-image: linear-gradient(315deg, #b1bfd8 0%, #6782b4 74%);
     
     .images-box .img-2
     {
-        position: absolute;
+       
         
         width: 100%;
         max-width: 350px;
@@ -611,6 +670,7 @@ background-image: linear-gradient(315deg, #b1bfd8 0%, #6782b4 74%);
         line-height: 1.5rem;
         margin-top: -2rem;
     }
+    
     .image{
         width: 65%;
         height: auto;
@@ -639,7 +699,7 @@ background-image: linear-gradient(315deg, #b1bfd8 0%, #6782b4 74%);
         margin:1rem;
     }
     
-    .community-section .para
+    .community-section .para,.carousel-sec .para
     {
         font-size: 1rem;
         line-height: 1.8rem;
@@ -677,7 +737,7 @@ background-image: linear-gradient(315deg, #b1bfd8 0%, #6782b4 74%);
 
     .images-box .img-2
     {
-        position: absolute;
+        
         width: 100%;
         height: 100%;
         
@@ -715,21 +775,20 @@ background-image: linear-gradient(315deg, #b1bfd8 0%, #6782b4 74%);
     
     
 }
-@media (min-width:300px) and (max-width:375px){
-    .in-container{
-        padding-top: 13rem !important;
-        margin-top: 3rem;
+
+
+@media  (max-width:768px){
+    .img-2{
+        display: flex;
+        margin-left: auto;
+       
     }
 }
-@media (min-width:375px) and (max-width:425px){
-    .in-container{
-        padding-top: 16rem !important;
-        margin-top: 3rem;
-    }
-}
-@media (min-width:425px) and (max-width:768px){
-    .in-container{
-        padding-top: 19rem !important;
-        margin-top: 3rem;
-    }
-}
+
+
+    .in-container{margin-top:0;
+    padding-top:3rem;
+padding-bottom: 3rem;}
+.become-section > .container{
+    padding-bottom: 3rem;
+        }
