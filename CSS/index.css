@@ -17,6 +17,7 @@
 body
 {
     scroll-behavior: smooth;
+    font-size: 14px;
 }
 .container
 {
@@ -27,7 +28,11 @@ body
 {
     min-height: 100vh;
     width: 100%;
-    background: var(--main-color);
+    /* background: var(--main-color); */
+    
+    background-color: #b1bfd8;
+background-image: linear-gradient(315deg, #b1bfd8 0%, #6782b4 74%);
+    
 }
 
 .hero__section button
@@ -73,15 +78,19 @@ body
 
 .cards
 {
-    padding: 1.5rem 0 1.5rem 0;
+    padding: 2rem 0 ;
     background: var(--light-blue);
     margin-bottom: 6rem;
 }
-
+.cards img{
+    width:40px;
+    height:40px
+}
 .cards h5
 {
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0;
 }
 
 .cards p
@@ -223,7 +232,39 @@ body
    font-family: Arial, Helvetica, sans-serif;;
 
 }
+.rec{
+    
+    
+    
+   display:none
+    /* display: block;
+    
+    position: relative;
+    right: 0px;
+    top: -45%;
+    z-index: -1; */
+    
+}
 
+@media (min-width:992px){
+    .images-box .img-2
+{
+    position: absolute;
+    min-width: 360px;
+    height: 85%;
+    right: -7%;
+    bottom: -60%;
+}
+
+.images-box .img-4
+{
+    position: absolute;
+    width: 70%;
+    height: 85%;
+    right: 10%;
+    bottom: -60%;
+}
+}
 
 @media (max-width:1200px)
 {
@@ -263,23 +304,7 @@ body
 }
 
 
-.images-box .img-2
-{
-    position: absolute;
-    width: 70%;
-    height: 85%;
-    right: 10%;
-    bottom: -60%;
-}
 
-.images-box .img-4
-{
-    position: absolute;
-    width: 70%;
-    height: 85%;
-    right: 10%;
-    bottom: -60%;
-}
     
 .Underline3{
     height : 0.3rem;
@@ -326,7 +351,7 @@ body
         color: white;
         font-family: Arial, Helvetica, sans-serif;
     }
-
+    
     .image{
         width: 75%;
         height: auto;
@@ -335,36 +360,36 @@ body
     {
         margin-left: -1rem;
     }
-
+    
     .community-section .para
     {
-    font-size: 1rem;
-    line-height: 1.8rem;
-    font-weight: 400;
-    margin-bottom: 2rem;
-    padding: 0;
-    text-align: center;
-    font-family: 'Merriweather', serif;
+        font-size: 1rem;
+        line-height: 1.8rem;
+        font-weight: 400;
+        margin-bottom: 2rem;
+        padding: 0;
+        text-align: center;
+        font-family: 'Merriweather', serif;
     }
     .become-section p
     {
-    font-size: 0.9rem;
-    line-height: 1.5rem;
-    font-weight: 400;
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+        font-weight: 400;
     margin-bottom: 3rem;
     font-family: 'Merriweather', serif; 
     padding: 0;
-    }
+}
 
-    .images-box .img-1
-    {
+.images-box .img-1
+{
        
         width: 100%;
         height: 100%;
         margin-bottom: 2rem;
-       
+        
     }
-
+    
     .images-box .img-2
     {
         position: absolute;
@@ -373,17 +398,17 @@ body
         right: 0;
         bottom: -100%;
     }
-
+    
     .images-box .img-3
     {
-       
+        
         width: 100%;
         height: 100%;
         margin-bottom: 2rem;
         margin-top: 6rem;
-       
+        
     }
-
+    
     .images-box .img-4
     {
         position: absolute;
@@ -391,7 +416,7 @@ body
         height: 60%;
         right: 0;
         
-  
+        
     }
     .Underline3{
         margin-top: 10rem;
@@ -399,17 +424,17 @@ body
         border-top: 0.2vw solid black;
         border-bottom: 0.2vw solid black;
     }
-
+    
     .next-container .main-row
     {
         margin-top: -5rem !important;
     }
-
+    
     .next-container .col-md-6
     {
         margin-top: -4rem;
     }
-
+    
 }
 
 
@@ -431,7 +456,7 @@ body
     {
         margin-top: -11rem !important;
     }
-
+    
     .next-container .col-md-6
     {
         margin-top: -4rem;
@@ -442,9 +467,9 @@ body
 {
     .container
     {
-    padding: 0 3%;
+        padding: 0 3%;
     }
-
+    
     .hero__section
     {
         min-height: 50vh;
@@ -452,7 +477,7 @@ body
     }
     .hero__section h1
     {
-        font-size: 2rem;
+        font-size: 3rem;
     }
     .hero__section h3
     {
@@ -461,7 +486,7 @@ body
         color: white;
         font-family: Arial, Helvetica, sans-serif;
     }
-
+    
     .image{
         width: 75%;
         height: auto;
@@ -470,55 +495,58 @@ body
     {
         margin-left: -1rem;
     }
-
+    
     .community-section .para
     {
-    font-size: 1rem;
-    line-height: 1.8rem;
-    font-weight: 400;
-    margin-bottom: 2rem;
-    padding: 0;
-    text-align: center;
-    font-family: 'Merriweather', serif;
+        font-size: 1rem;
+        line-height: 1.8rem;
+        font-weight: 400;
+        margin-bottom: 2rem;
+        padding: 0;
+        text-align: center;
+        font-family: 'Merriweather', serif;
     }
     .become-section p
     {
-    font-size: 0.9rem;
-    line-height: 1.5rem;
-    font-weight: 400;
-    margin-bottom: 3rem;
-    font-family: 'Merriweather', serif; 
-    padding: 0;
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+        margin-bottom: 3rem;
+        font-family: 'Merriweather', serif; 
+        padding: 0;
     }
-
+    
     .images-box .img-1
     {
-       
+        
         width: 100%;
+        max-width: 350px;
         height: 100%;
         margin-bottom: 2rem;
-       
+        
     }
-
+    
     .images-box .img-2
     {
         position: absolute;
+        
         width: 100%;
+        max-width: 350px;
         height: 100%;
         right: 0;
         bottom: -100%;
     }
-
+    
     .images-box .img-3
     {
-       
+        
         width: 100%;
         height: 100%;
         margin-bottom: 2rem;
         margin-top: 6rem;
        
     }
-
+    
     .images-box .img-4
     {
         position: absolute;
@@ -526,7 +554,7 @@ body
         height: 60%;
         right: 0;
         
-  
+        
     }
     .Underline3{
         margin-top: 10rem;
@@ -534,17 +562,17 @@ body
         border-top: 0.2vw solid black;
         border-bottom: 0.2vw solid black;
     }
-
+    
     .next-container .main-row
     {
         margin-top: -10rem !important;
     }
-
+    
     .next-container .col-md-6
     {
         margin-top: -4rem;
     }
-
+    
 }
 
 
@@ -552,16 +580,18 @@ body
 {
     .container
     {
-    padding: 0 10%;
+        padding: 0 10%;
     }
     .next-container
     {
-    padding: 0 7%;
+        padding: 0 7%;
     }
     .hero__section h1
     {
         font-size: 2rem;
+        font-weight:600;
         margin-top: 1.5rem;
+        
     }
     .hero__section h3
     {
@@ -577,7 +607,7 @@ body
     }
     .hero__section .para
     {
-        font-size: 0.8rem;
+        font-size: 1rem;
         line-height: 1.5rem;
         margin-top: -2rem;
     }
@@ -596,52 +626,52 @@ body
     .cards p
     {
         font-size: 1rem;
-       
+        
     }
     
     .col-8
     {
         margin-left: -2rem;
     }
-
+    
     .main-row
     {
-        margin:1rem 0 0 1rem;
+        margin:1rem;
     }
-
+    
     .community-section .para
     {
-    font-size: 1rem;
-    line-height: 1.8rem;
-    font-weight: 400;
-    margin-bottom: 2rem;
-    padding: 0;
-    text-align: center;
+        font-size: 1rem;
+        line-height: 1.8rem;
+        font-weight: 400;
+        margin-bottom: 2rem;
+        padding: 0;
+        text-align: center;
     font-family: 'Merriweather', serif;
-    }
-    .become-section h3
-    {
+}
+.become-section h3
+{
     margin-top: 1rem;
     margin-bottom: 1.5rem;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    }
+}
 
-    .become-section p
-    {
+.become-section p
+{
     font-size: 0.9rem;
     line-height: 1.5rem;
     font-weight: 400;
     margin-bottom: 3rem;
     font-family: 'Merriweather', serif; 
     padding: 0;
-    }
-    .images-box .img-1
-    {
-       
-        width: 100%;
-        height: 100%;
-        margin-bottom: 2rem;
+}
+.images-box .img-1
+{
+    
+    width: 100%;
+    height: 100%;
+    margin-bottom: 2rem;
        
     }
 
@@ -650,30 +680,30 @@ body
         position: absolute;
         width: 100%;
         height: 100%;
-     
-    
+        
+        
     }
-
+    
     .images-box .img-3
     {
-       
+        
         width: 100%;
         height: 100%;
         margin-bottom: 2rem;
         margin-top: 16rem;
         
-       
+        
     }
-
+    
     .images-box .img-4
     {
         position: absolute;
         width: 100%;
         height: 50%;
         top: 31rem;
-      
         
-  
+        
+        
     }
     .Underline3{
         margin-top: 23rem;
@@ -681,9 +711,25 @@ body
         border-top: 0.2vw solid black;
         border-bottom: 0.2vw solid black;
     }
-
-   
-
+    
+    
+    
 }
-
-
+@media (min-width:300px) and (max-width:375px){
+    .in-container{
+        padding-top: 13rem !important;
+        margin-top: 3rem;
+    }
+}
+@media (min-width:375px) and (max-width:425px){
+    .in-container{
+        padding-top: 16rem !important;
+        margin-top: 3rem;
+    }
+}
+@media (min-width:425px) and (max-width:768px){
+    .in-container{
+        padding-top: 19rem !important;
+        margin-top: 3rem;
+    }
+}
