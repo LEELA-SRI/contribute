@@ -3,6 +3,9 @@
 .mainBody {
   line-height: 1.2 !important;
 }
+body{
+  overflow-x:hidden
+}
 
 .mob-nav {
   display: none;
