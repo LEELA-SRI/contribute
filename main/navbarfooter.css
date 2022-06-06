@@ -341,7 +341,7 @@
   position: absolute;
   background-color: #fff;
   margin-top: 15px;
-  width: fit-content;
+  width: 208px;
   margin-left: -129px;
   /* right:1.4rem; */
   color: black;
@@ -417,9 +417,16 @@
   color: #fc00bd;
 }
 
+@media (min-width:1200px) and (max-width:1300px){
+  .profile-dropdown-desk{
+    margin-left: 0px;
+    right:1.4rem
+  }
+}
 @media (min-width:1300px){
   .profile-dropdown-desk{
     margin-left: -81px;
+    
   }
 }
 @media screen and (max-width: 1023px) {
