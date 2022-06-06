@@ -26,6 +26,10 @@
 .nav-priPage {
   display: none;
 }
+.profile-dropdown-desk span{
+  align-items: center;
+
+}
 
 .desk-dropdowns p{
     margin-bottom: 0;
@@ -328,11 +332,12 @@
 }
 
 .profile-dropdown-desk {
-  position: absolute;
+  position: relative;
   background-color: #fff;
   margin-top: 15px;
   width: 240px;
-  margin-left: -145px;
+  margin-left: -199px;
+  right:0;
   color: black;
   border-radius: 3px;
   padding: 0px;
@@ -391,7 +396,7 @@
   list-style: none;
   margin: 0px;
   padding: 15px;
-  font-size: 15px;
+  font-size: 15px !important;
 }
 
 .prof-dropdown li {
