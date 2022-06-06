@@ -507,22 +507,22 @@
 @media (min-width: 1200px) {
   .catalog-dropdown-desk {
     left: 50%;
-    transform: translateX(-50%);
-    width: clamp(1024px, 1200px, 1200px);
+    transform: translateX(-51%);
+    width: clamp(1024px, 1185px, 1200px);
   }
 }
 
-@media screen and (min-width: 1045px) {
+/* @media screen and (min-width: 1045px) {
   .catalog-dropdown-desk {
     margin-left: none;
-    right: 0rem;
+    right: 1rem;
   }
-}
+} */
 
-@media (max-width: 1045px) {
+@media (max-width: 1200px) {
   .catalog-dropdown-desk {
     margin-left: none;
-    right: 0rem;
+    right: 1rem;
   }
 }
 
