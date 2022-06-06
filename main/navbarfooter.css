@@ -281,7 +281,7 @@
 .desk-dropdowns {
   display: flex;
   padding-left: 1rem;
-  padding-right: 4rem;
+  padding-right: 3rem;
   margin-left: auto;
 }
 
@@ -342,7 +342,7 @@
   background-color: #fff;
   margin-top: 15px;
   width: fit-content;
-  margin-left: -118px;
+  margin-left: -129px;
   /* right:1.4rem; */
   color: black;
   border-radius: 3px;
