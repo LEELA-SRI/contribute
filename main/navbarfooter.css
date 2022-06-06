@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
 
 .mainBody{
-    line-height: 1.2 !important;
+  line-height: 1.2 !important;
 }
 .mob-nav {
   display: none;
@@ -26,13 +26,8 @@
 .nav-priPage {
   display: none;
 }
-.profile-dropdown-desk span{
-  align-items: center;
-
-}
-
 .desk-dropdowns p{
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 .desk-dropdowns li {
   margin-right: 50px;
@@ -41,8 +36,16 @@
 .dropdown-main-1-card li {
   margin-right: 10px;
 }
+.profile-dropdown-desk span{
+  align-items: center;
+
+}
+
+.colored, .colored *{
+  color:#fc00bd
+}
 @media screen and (min-width: 1023px) {
-  .nav-mainPage ,.nav-catalogPage,.nav-commPage,.nav-resPage,.nav-priPage{
+  .nav-mainPage ,.nav-catalogPage,.nav-commPage,.nav-resPage,.nav-priPage {
     display: none !important;
   }
 }
@@ -93,9 +96,9 @@
     color: #999;
     align-items: center;
     font-size: 10px;
+    font-family: "Montserrat", sans-serif;
     padding-top:0.5rem;
     padding-bottom:0.5rem;
-    font-family: "Montserrat", sans-serif;
   }
 
   .nav-footer-row-1 {
@@ -132,7 +135,7 @@
     vertical-align: middle;
     align-items: center;
     line-height: 25px;
-    font-size:1rem
+    font-size :1rem;
   }
 
   .mob-nav-sub-blocks {
@@ -147,7 +150,7 @@
     vertical-align: middle;
     align-items: center;
     line-height: 25px;
-    font-size: 1rem;
+    font-size:1rem
   }
 
   .mob-nav-blocks a {
@@ -187,7 +190,7 @@
     border: none;
     border-bottom: 1px solid #ddd;
     font-size: 1rem;
-    margin-bottom:0
+    margin-bottom: 0;
   }
 
   .active,
@@ -244,31 +247,31 @@
   padding: 0;
 }
 
-.mainBody >.nav-bar-desktop {
+.nav-bar-desktop {
   z-index: 1000;
   width: 100vw;
   height: 70px;
   background-color: #111111;
   left: 0;
-  font-size: 16px !important;
+  font-size: 16px;
   position: fixed;
   display: flex;
   justify-content: center;
-  font-family: "Montserrat", sans-serif !important;
+  font-family: "Montserrat", sans-serif;
   box-shadow: 0px 1px 5px #1a191d;
   padding-right: 0.4rem;
 }
 
-.mainBody > .nav-bar-desktop > .desk-nav-frame {
+.desk-nav-frame {
   max-width: 1200px;
   margin-top: 5px;
   min-width: 600px;
   width: 1200px;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
-.mainBody > .nav-bar-desktop >.desk-nav-frame li {
+.desk-nav-frame li {
   padding-top: 20px;
   list-style: none;
   font-size: 0.8rem;
@@ -277,6 +280,9 @@
 
 .desk-dropdowns {
   display: flex;
+  padding-left: 1rem;
+  padding-right: 4rem;
+  margin-left: auto;
 }
 
 .desk-nav-frame .login {
@@ -311,7 +317,7 @@
   position: absolute;
   background-color: #fff;
   margin-top: 30px;
-  margin-left: -50px;
+  margin-left: -45px;
   color: black;
   border-radius: 3px;
   padding: 18px;
@@ -323,7 +329,7 @@
   position: absolute;
   background-color: #fff;
   margin-top: 30px;
-  margin-left: -40px;
+  margin-left: -58px;
   color: black;
   border-radius: 3px;
   padding: 18px;
@@ -332,12 +338,12 @@
 }
 
 .profile-dropdown-desk {
-  position: relative;
+  position: absolute;
   background-color: #fff;
   margin-top: 15px;
-  width: 240px;
-  margin-left: -199px;
-  right:0;
+  width: fit-content;
+  margin-left: -118px;
+  /* right:1.4rem; */
   color: black;
   border-radius: 3px;
   padding: 0px;
@@ -361,7 +367,7 @@
   position: absolute;
   background-color: #fff;
   margin-top: 30px;
-  margin-left: -40px;
+  margin-left: -51px;
   color: black;
   border-radius: 3px;
   padding: 18px;
@@ -411,6 +417,11 @@
   color: #fc00bd;
 }
 
+@media (min-width:1300px){
+  .profile-dropdown-desk{
+    margin-left: -81px;
+  }
+}
 @media screen and (max-width: 1023px) {
   .nav-bar-desktop {
     display: none !important;
@@ -426,7 +437,7 @@
     top: 0;
     justify-content: center;
     display: flex;
-    box-shadow: 0px 1px 5px #1a191d;
+    box-shadow:  0px 0px 8px 2px rgba(0, 0, 0, 0.2);
   }
 
   .mob-nav-frame {
