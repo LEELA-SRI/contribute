@@ -31,7 +31,7 @@ else {
 }
 
 function hideMobNavigationMenu() {
-    document.querySelector('body').style.overflow="scroll"
+    document.querySelector('body').style.overflowY="scroll"
     nav_commPage[0].style.display = "none";
     nav_catPage[0].style.display = "none";
     nav_mainPage[0].style.display = "none";

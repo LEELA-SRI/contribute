@@ -549,6 +549,7 @@
   display: grid;
   place-items: center;
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 .Footer_page {
   overflow: hidden;
